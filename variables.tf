@@ -11,10 +11,22 @@ variable "location" {
 variable "tags" {
   description = "tags for the resources"
   type        = map(string)
-  default ={
+  default = {
     "envirinment" = "dev"
     "source"      = "terraform"
     "purpose"     = "testing"
   }
+
+}
+variable "org_name" {
+  description = "Organisation name"
+  type        = string
+  default     = "raghu"
+
+}
+variable "project_name" {
+  description = "Organisation name"
+  type        = string
+  default     = "batch2"
 
 }
